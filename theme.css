@@ -1,16 +1,17 @@
 :root {
+
+	/* Font values */
+	--ncg-font-text-theme: 				"Lora", "Times New Roman", serif;
+	--ncg-font-monospace-theme:			"Source Code Pro", "Courier New", monospace;
+	--ncg-font-weight:					400;
+	--ncg-bold-modifier:				300;
+	
 	/* Radius values */
 	--ncg-radius-0:						0px;
 	--ncg-radius-s: 					4px;
 	--ncg-radius-m: 					8px;
 	--ncg-radius-l: 					12px;
 	--ncg-radius-xl: 					16px;
-
-	/* Font values */
-	--ncg-fonts: 						"Lora", "Times New Roman", serif;
-	--ncg-fonts-monospace: 				"Source Code Pro", "Courier New", monospace;
-	--ncg-font-weight:					800;
-
 }
 
 .theme-light {
@@ -18,9 +19,12 @@
 	--ncg-color-bg-1: 					#FFF7E7;
 	--ncg-color-bg-2: 					#EEE5D1;
 	--ncg-color-accent-1: 				#A9C985;
-	--ncg-color-accent-2: 				#5B7F58;
+	--ncg-color-accent-2: 				#618456;
 	--ncg-color-text-1: 				#342C24;
-	
+
+	--ncg-bold-color:					red;
+	--ncg-italic-color:					blue;
+
 }
 
 .theme-dark {
@@ -31,28 +35,51 @@
 }
 
 body {
-	/* Radius values */
-	--radius-s: 				var(--ncg-radius-s);
-	--radius-m: 				var(--ncg-radius-m);
-	--radius-l: 				var(--ncg-radius-l);
-	--radius-xl: 				var(--ncg-radius-xl);
-	--input-radius: 			var(--ncg-radius-s);
-	--tab-radius-active: 		var(--ncg-radius-0);
-	--checkbox-radius: 			var(--ncg-radius-s);
-	--toggle-radius: 			var(--ncg-radius-l);
-	--toggle-thumb-radius: 		var(--ncg-radius-l);
-	--slider-thumb-radius: 		var(--ncg-radius-l);
 
-	/* Font values */
-	--font-text-theme:			var(--ncg-fonts);
-	--font-monospace-theme:		var(--ncg-fonts-monospace);
-	--font-weight:				var(--ncg-font-weight);
+	/* Font */
+	--font-text-theme: 					var(--ncg-font-text-theme);
+	--font-monospace-theme:				var(--ncg-font-monospace-theme);
+	--font-weight:						var(--ncg-font-weight);
+	--bold-modifier:					var(--ncg-bold-modifier);
+	--bold-color:						var(--ncg-bold-color);
+	--italic-color:						var(--ncg-italic-color);
 
-	/* Color values */
-	--background-primary:		var(--ncg-color-bg-1);
-	--background-secondary: 	var(--ncg-color-bg-2);
-	--text-normal: 				var(--ncg-color-text-1);
-	--ribbon-background: 		var(--ncg-color-accent-1);
+	/* Radius */
+	--input-radius: 					var(--ncg-radius-s);
+	--tab-radius-active: 				var(--ncg-radius-0);
+	--toggle-radius: 					var(--ncg-radius-l);
+	--toggle-thumb-radius: 				var(--ncg-radius-l);
+	--slider-thumb-radius: 				var(--ncg-radius-l);
+
+	/* Button */
+	/* Checkbox */
+	--checkbox-marker-color:			var(--ncg-color-bg-1);
+	--checkbox-color:					var(--ncg-color-accent-1);
+	--checkbox-color-hover:				var(--ncg-color-accent-2);
+	--checkbox-border-color:			var(--ncg-color-accent-1);
+	--checkbox-border-color-hover:		var(--ncg-color-accent-2);
+
+	/* Color input */
+	/* Dialog */
+	/* Dragging */
+	--drag-ghost-background:			var(--ncg-color-accent-1);
+	--drag-ghost-text-color:			var(--ncg-color-bg-1);
+
+
+
+
+
+
+	/* Font values */		
+
+	/* Color values */		
+	--background-primary:				var(--ncg-color-bg-1);
+	--background-secondary: 			var(--ncg-color-bg-2);
+	--text-normal: 						var(--ncg-color-text-1);
+	--ribbon-background: 				var(--ncg-color-accent-1);
+
+
+
 }
 
 
