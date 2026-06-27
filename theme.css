@@ -65,9 +65,10 @@ body {
 	--drag-ghost-background:			var(--ncg-color-accent-1);
 	--drag-ghost-text-color:			var(--ncg-color-bg-1);
 
+	/* Dropdown ???*/
+	--dropdown-background:				red;
 
-
-
+	
 
 
 	/* Font values */		
