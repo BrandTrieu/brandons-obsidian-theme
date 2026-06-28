@@ -1,42 +1,164 @@
 :root {
 
 	/* Font values */
-	--ncg-font-text-theme: 				"Lora", "Times New Roman", serif;
-	--ncg-font-monospace-theme:			"Source Code Pro", "Courier New", monospace;
-	--ncg-font-weight:					400;
-	--ncg-bold-modifier:				300;
-	
-	/* Radius values */
-	--ncg-radius-0:						0px;
-	--ncg-radius-s: 					4px;
-	--ncg-radius-m: 					8px;
-	--ncg-radius-l: 					12px;
-	--ncg-radius-xl: 					16px;
-}
+	--ncg-font-interface-theme: 				"Lora", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--ncg-font-text-theme: 						"Lora", "Times New Roman", serif;
+	--ncg-font-monospace-theme:					"Source Code Pro", "Courier New", monospace;
+	--ncg-bold-modifier:						300;
+}		
+		
+.theme-light {		
+/* Custom color values */		
+	--ncg-color-accent-1: 						#A9C985;
+	--ncg-color-accent-1-rgb:					169, 201, 133;
+	--ncg-color-accent-1-hsl:					88, 39, 65;
 
-.theme-light {
-	/* Color values */
-	--ncg-color-bg-1: 					#FFF7E7;
-	--ncg-color-bg-2: 					#EEE5D1;
-	--ncg-color-accent-1: 				#A9C985;
-	--ncg-color-accent-2: 				#618456;
-	--ncg-color-text-1: 				#342C24;
+	--ncg-color-accent-2: 						#618456;
+	--ncg-color-accent-2-rgb:					97, 132, 86;
+	--ncg-color-accent-2-hsl:					106, 21, 43;
 
-	--ncg-bold-color:					red;
-	--ncg-italic-color:					blue;
+	--ncg-color-text-1: 						#342C24;
 
-}
+	--ncg-alpha-l:								0.25;
+	--ncg-alpha-m:								0.5;
+	--ncg-alpha-d:								0.75;
 
-.theme-dark {
-	--ncg-color-bg-1: 					#1E1E1E;
-	--ncg-color-bg-2: 					#2D2D2D;
-	--ncg-color-text-1: 				#FFF7E7;
+
+/* Base color values */		
+	--color-base-00: 							#FFF5E0;
+	--color-base-05: 							#FDF1DB;
+	--color-base-10: 							#FAEED6;
+	--color-base-20: 							#F5E6CC;
+	--color-base-25: 							#F3E2C6;
+	--color-base-30: 							#F0DFC1;
+	--color-base-35: 							#EEDBBC;
+	--color-base-40: 							#EBD7B7;
+
+	--color-base-50: 							#C3AE8D;
+	--color-base-60: 							#9A876A;
+	--color-base-70: 							#705F48;
+	--color-base-100: 							#463825;
+
+/* Extended color values */
+	--color-red:        #D85A56;
+	--color-red-rgb:    216, 90, 86;	
+	--color-orange:     #E19A43;
+	--color-orange-rgb: 225, 154, 67;	
+	--color-yellow:     #CCB03A;
+	--color-yellow-rgb: 204, 176, 58;	
+	--color-green:      #67A95A;
+	--color-green-rgb:  103, 169, 90;	
+	--color-cyan:       #54A9A2;
+	--color-cyan-rgb:   84, 169, 162;	
+	--color-blue:       #648FDC;
+	--color-blue-rgb:   100, 143, 220;	
+	--color-purple:     #8B6FE0;
+	--color-purple-rgb: 139, 111, 224;	
+	--color-pink:       #D471A3;
+	--color-pink-rgb:   212, 113, 163;
+
+/* Font values */
+	--ncg-bold-color:							red;
+	--ncg-italic-color:							blue;
+	--ncg-highlight-color:						green;
+
+/* Other color values */
+
+	--background-secondary-alt: 				var(--color-base-00);
 
 }
 
 body {
 
+/*#############*/
+/* Foundations */
+/*#############*/
+
+/* Borders ########## */
+/* Colors ########## */
+	/* Base colors # */
+	/* Accent color */
+	/* Extended colors # */
+	/* Black and white */
+	/* Semantic colors # */
+		/* Surface colors # */
+		--background-primary:					var(--color-base-00);
+		--background-primary-alt: 				var(--color-base-25);
+		--background-secondary:					var(--color-base-20);
+		/*background-secondary-alt in .theme*/
+
+		
+		--background-modifier-hover:			rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-m));
+		--background-modifier-active-hover:		hsla(var(--ncg-color-accent-2-hsl), var(--ncg-alpha-m));
+		
+		
+
+		/* Interactive colors # */
+		--interactive-normal:					var(--color-base-20);
+		--interactive-hover:					var(--color-base-30);
+		--interactive-accent:					var(--ncg-color-accent-1);
+		--interactive-accent-hsl:				var(--ncg-color-accent-1-hsl);
+		--interactive-accent-hover:				var(--ncg-color-accent-2);
+
+		/* Text colors # */
+			/* Text foreground colors # */
+			--text-on-accent:					var(--color-base-00);
+			--text-on-accent-inverted:			var(--color-base-100);	
+			--text-accent:						var(--ncg-color-accent-1);
+			--text-accent-hover:				var(--ncg-color-accent-2);
+
+			/* Text background colors # */
+			--text-selection:					rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-m));
+			--text-highlight-bg:				var(--ncg-highlight-color);
+			/* Caret color */
+
+
+/* Cursor ########## */
+/* Icons ########## */
+	--icon-color:								red;
+	--icon-color-hover:							green;
+	--icon-color-active:						blue;
+	--icon-color-focused: /*cliked*/			orange;
+
+	/* Icon sizes */
+
+/* Layers ########## */
+/* Radiuses ########## */
+/* Spacing ########## */
+/* Typography ########## */
+	/* Fonts # */
+		--font-interface-theme: 				var(--ncg-font-interface-theme);
+		--font-text-theme: 						var(--ncg-font-text-theme);
+		--font-monospace-theme:					var(--ncg-font-monospace-theme);
+
+	/* Font size */
+	/* Font weight */
+	/* Text formatting # */
+		--bold-modifier:						var(--ncg-bold-modifier);
+		--bold-color:							var(--ncg-bold-color);
+		--italic-color:							var(--ncg-italic-color);
+	/* Line height */
+	/* Paragraph spacing */
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+bbbb {
+
 	/* Font */
+	--font-interface-theme: 			var(--ncg-font-interface-theme);
 	--font-text-theme: 					var(--ncg-font-text-theme);
 	--font-monospace-theme:				var(--ncg-font-monospace-theme);
 	--font-weight:						var(--ncg-font-weight);
@@ -62,11 +184,12 @@ body {
 	/* Color input */
 	/* Dialog */
 	/* Dragging */
-	--drag-ghost-background:			var(--ncg-color-accent-1);
+	--drag-ghost-background:			var(--ncg-color-accent-2);
 	--drag-ghost-text-color:			var(--ncg-color-bg-1);
 
 	/* Dropdown ???*/
 	--dropdown-background:				red;
+
 
 	
 
@@ -82,6 +205,11 @@ body {
 
 
 }
+
+
+
+
+
 
 
 
