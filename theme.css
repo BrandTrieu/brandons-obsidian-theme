@@ -65,6 +65,7 @@ default = value is same as original Obsidian settings, but I added it in incase 
 	--ncg-background-color-2:					var(--color-base-20);
 	--ncg-transparent-color-l:					rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-l));
 	--ncg-transparent-color-m:					rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-m));
+	--ncg-border-color:							var(--color-base-40);
 
 
 	--ncg-alpha-l:								0.25;
@@ -162,7 +163,7 @@ body {
 
 /* Code ----------------------------------------------------------------------------------------- */
 	/* Syntax highlighting # */
-	
+		--code
 
 
 
@@ -187,7 +188,7 @@ body {
 
 		--background-modifier-hover:			var(--ncg-transparent-color-m);
 		--background-modifier-active-hover:		hsla(var(--unknown-value), 1); /* ??? */
-		--background-modifier-border:			var(--color-base-50);
+		--background-modifier-border:			var(--ncg-border-color);
 		--background-modifier-border-hover:		var(--ncg-color-accent-2);
 		--background-modifier-border-focus:		var(--ncg-color-accent-2); 
 
