@@ -19,12 +19,16 @@ default = value is same as original Obsidian settings, but I added it in incase 
 	--ncg-bases-header-width:					0 0 32px 0;
 	--ncg-bases-header-height:					80px;
 
-/* Callout values --------------------------------------------------------------------------------- */
+/* Callout values ------------------------------------------------------------------------------- */
 
 	--ncg-callout-border-width: 				1px;
 	--ncg-callout-padding: 						0px;
 	--ncg-callout-title-padding: 				12px;
 	--ncg-callout-content-padding: 				0px 12px;
+
+/* Embed values --------------------------------------------------------------------------------- */
+
+	--ncg-embed-padding: 						0px 0px 0px 12px;
 
 }		
 
@@ -67,6 +71,8 @@ default = value is same as original Obsidian settings, but I added it in incase 
 	--ncg-transparent-color-m:					rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-m));
 	--ncg-border-color:							var(--color-base-40);
 
+	--ncg-embed-border-1: 						2px solid var(--ncg-color-accent-1);
+	--ncg-embed-border-2: 						2px dashed var(--ncg-color-accent-1);
 
 	--ncg-alpha-l:								0.25;
 	--ncg-alpha-m:								0.5;
@@ -163,7 +169,28 @@ body {
 
 /* Code ----------------------------------------------------------------------------------------- */
 	/* Syntax highlighting # */
-		--code
+		--code: 1;
+
+
+
+
+
+/* Embed ---------------------------------------------------------------------------------------- */
+	--embed-max-height: 1000px;
+	--embed-canvas-max-height: 400px;
+
+	--embed-border-end: 						var(--ncg-embed-border-1);
+	--embed-border-start: 						var(--ncg-embed-border-1);
+	--embed-border-top: 						var(--ncg-embed-border-2);
+	--embed-border-bottom: 						var(--ncg-embed-border-2);
+
+	--embed-padding: 							var(--ncg-embed-padding);
+
+/* File ----------------------------------------------------------------------------------------- */
+/* Footnote ------------------------------------------------------------------------------------- */
+/* Headings ------------------------------------------------------------------------------------- */
+
+
 
 
 
