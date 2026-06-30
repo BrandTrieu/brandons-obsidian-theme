@@ -30,6 +30,14 @@ default = value is same as original Obsidian settings, but I added it in incase 
 
 	--ncg-embed-padding: 						0px 0px 0px 12px;
 
+/* Header values -------------------------------------------------------------------------------- */
+
+	--ncg-header-line-height:					1.2;
+	--ncg-h1-size:								2.0em;
+	--ncg-h2-size:								1.75em;
+	--ncg-h3-size:								1.5em;
+	--ncg-h4-size:								1.25em;
+	--ncg-header-weight:						900;
 }		
 
 
@@ -62,8 +70,15 @@ default = value is same as original Obsidian settings, but I added it in incase 
 	--ncg-bold-color:							var(--color-red);
 	--ncg-italic-color:							var(--color-cyan);
 	--ncg-highlight-color:						var(--color-yellow);
-	--ncg-blockquote-color:						var(--color-green);
+	--ncg-blockquote-color:						var(--text-normal);
 	--ncg-message-color:						rgba(var(--ncg-color-accent-3-rgb), var(--ncg-alpha-d));
+
+	--ncg-h1-color:								var(--color-red);
+	--ncg-h2-color:								var(--color-orange);
+	--ncg-h3-color:								var(--color-yellow);
+	--ncg-h4-color:								var(--color-cyan);
+	--ncg-h5-color:								var(--color-blue);
+	--ncg-h6-color:								var(--color-purple);
 
 	--ncg-background-color-1:					var(--color-base-00);
 	--ncg-background-color-2:					var(--color-base-20);
@@ -71,8 +86,7 @@ default = value is same as original Obsidian settings, but I added it in incase 
 	--ncg-transparent-color-m:					rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-m));
 	--ncg-border-color:							var(--color-base-40);
 
-	--ncg-embed-border-1: 						2px solid var(--ncg-color-accent-1);
-	--ncg-embed-border-2: 						2px dashed var(--ncg-color-accent-1);
+	--ncg-embed-border-1: 						2px dashed var(--ncg-color-accent-1);
 
 	--ncg-alpha-l:								0.25;
 	--ncg-alpha-m:								0.5;
@@ -96,29 +110,29 @@ default = value is same as original Obsidian settings, but I added it in incase 
 
 /* Extended color values ------------------------------------------------------------------------ */
 
-	--color-red:       							#D85A56;
-	--color-red-rgb:   							216, 90, 86;
+	--color-red:       							#d34f4b;
+	--color-red-rgb:   							224, 84, 79;
 
-	--color-orange:    							#E19A43;
-	--color-orange-rgb:							225, 154, 67;	
+	--color-orange:    							#e4a23e;
+	--color-orange-rgb:							241, 172, 68;	
 
-	--color-yellow:    							#F9D81E;
-	--color-yellow-rgb:							249, 216, 30;
+	--color-yellow:    							#ddbf39;
+	--color-yellow-rgb:							255, 220, 65;
 
-	--color-green:     							#67A95A;
-	--color-green-rgb: 							103, 169, 90;
+	--color-green:     							#6db94a;
+	--color-green-rgb: 							144, 220, 93;
 
-	--color-cyan:      							#54A9A2;
-	--color-cyan-rgb:  							84, 169, 162;	
+	--color-cyan:      							#69c995;
+	--color-cyan-rgb:  							116, 226, 167;	
 
-	--color-blue:      							#648FDC;
-	--color-blue-rgb:  							100, 143, 220;	
+	--color-blue:      							#5db0cc;
+	--color-blue-rgb:  							107, 200, 231;	
 
-	--color-purple:    							#8B6FE0;
-	--color-purple-rgb:							139, 111, 224;	
+	--color-purple:    							#856bd1;
+	--color-purple-rgb:							152, 122, 242;	
 
-	--color-pink:      							#D471A3;
-	--color-pink-rgb:  							212, 113, 163;
+	--color-pink:      							#c769b3;
+	--color-pink-rgb:  							233, 132, 211;
 
 /* Other color values --------------------------------------------------------------------------- */
 
@@ -181,18 +195,37 @@ body {
 
 	--embed-border-end: 						var(--ncg-embed-border-1);
 	--embed-border-start: 						var(--ncg-embed-border-1);
-	--embed-border-top: 						var(--ncg-embed-border-2);
-	--embed-border-bottom: 						var(--ncg-embed-border-2);
+	--embed-border-top: 						var(--ncg-embed-border-1);
+	--embed-border-bottom: 						var(--ncg-embed-border-1);
 
 	--embed-padding: 							var(--ncg-embed-padding);
 
 /* File ----------------------------------------------------------------------------------------- */
 /* Footnote ------------------------------------------------------------------------------------- */
 /* Headings ------------------------------------------------------------------------------------- */
+	--h1-color:									var(--ncg-h1-color);
+	--h2-color:									var(--ncg-h2-color);
+	--h3-color:									var(--ncg-h3-color);
+	--h4-color:									var(--ncg-h4-color);
+	--h5-color:									var(--ncg-h5-color);
+	--h6-color:									var(--ncg-h6-color);
 
-	/* CONTINUE */
+	--h1-line-height: 							var(--ncg-header-line-height);
+	--h2-line-height: 							var(--ncg-header-line-height);
+	--h3-line-height: 							var(--ncg-header-line-height);
+	--h4-line-height: 							var(--ncg-header-line-height);
+	--h5-line-height: 							var(--ncg-header-line-height);
+	--h6-line-height: 							var(--ncg-header-line-height);
 
+	--h1-size:									var(--ncg-h1-size);
+	--h2-size:									var(--ncg-h2-size);
+	--h3-size:									var(--ncg-h3-size);
+	--h4-size:									var(--ncg-h4-size);
+	--h5-size:									var(--ncg-h4-size);
+	--h6-size:									var(--ncg-h4-size);
 
+	--h1-weight: 								var(--ncg-header-weight);
+	--h2-weight: 								var(--ncg-header-weight);
 
 /* ============================================================================================== */
 /* Foundations ================================================================================== */
