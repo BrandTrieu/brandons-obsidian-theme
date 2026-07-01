@@ -37,7 +37,10 @@ default = value is same as original Obsidian settings, but I added it in incase 
 	--ncg-h2-size:								1.75em;
 	--ncg-h3-size:								1.5em;
 	--ncg-h4-size:								1.25em;
-	--ncg-header-weight:						900;
+	--ncg-h1-weight:							1000;
+	--ncg-h2-weight:							800;
+	--ncg-h3-weight:							700;
+	--ncg-h4-weight:							600;
 }		
 
 
@@ -224,8 +227,13 @@ body {
 	--h5-size:									var(--ncg-h4-size);
 	--h6-size:									var(--ncg-h4-size);
 
-	--h1-weight: 								var(--ncg-header-weight);
-	--h2-weight: 								var(--ncg-header-weight);
+	--h1-weight: 								var(--ncg-h1-weight);
+	--h2-weight: 								var(--ncg-h2-weight);
+	--h3-weight: 								var(--ncg-h3-weight);
+	--h4-weight: 								var(--ncg-h4-weight);
+	--h5-weight: 								var(--ncg-h4-weight);
+	--h6-weight: 								var(--ncg-h4-weight);
+
 
 /* ============================================================================================== */
 /* Foundations ================================================================================== */
