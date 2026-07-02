@@ -74,27 +74,30 @@ default = value is same as original Obsidian settings, but I added it in incase 
 	--ncg-color-unknown-value:					#FF00FF;
 	--ncg-color-unknown-value-hsl:				300, 100, 50;
 
-	--ncg-color-accent-1: 						#98CC89;
-	--ncg-color-accent-1-rgb:					154, 201, 130;
-	--ncg-color-accent-1-hsl:					100, 40, 65;
+	--ncg-color-accent-1:                       #90BDC0;
+	--ncg-color-accent-1-rgb:                   144, 189, 192;
+	--ncg-color-accent-1-hsl:                   184, 29%, 66%;
 
-	--ncg-color-accent-2: 						#6B9668;
-	--ncg-color-accent-2-rgb:					123, 175, 106;
-	--ncg-color-accent-2-hsl:					105, 30, 55;
+	--ncg-color-accent-2:                       #6D9090;
+	--ncg-color-accent-2-rgb:                   109, 144, 144;
+	--ncg-color-accent-2-hsl:                   180, 14%, 50%;
 
-	--ncg-color-accent-3: 						#5C7258;
-	--ncg-color-accent-3-rgb:					99, 138, 92;
-	--ncg-color-accent-3-hsl:					110, 20, 45;
+	--ncg-color-accent-3:                       #4A625F;
+	--ncg-color-accent-3-rgb:                   74, 98, 95;
+	--ncg-color-accent-3-hsl:                   173, 14%, 34%;
+
+	--ncg-color-accent-supp-1:  				#729969;
+	--ncg-color-accent-supp-2:  				#4A6547;
 
 	--ncg-triple-background: 
-		linear-gradient(170deg,
-    	var(--ncg-color-accent-1) 0%,
-   	 	var(--ncg-color-accent-1) 33.33%,
-   	 	var(--ncg-color-accent-2) 33.33%,
-   	 	var(--ncg-color-accent-2) 66.66%,
-    	var(--ncg-color-accent-3) 66.66%,
-    	var(--ncg-color-accent-3) 100%
-  	);
+		background: linear-gradient(
+    		135deg,
+    		#90BDC0 0%,
+    		#D4E0E1 30%,
+    		#729969 70%,
+    		#4A6547 100%
+		);
+
 
 
 /* Custom text color values --------------------------------------------------------------------- */
@@ -135,19 +138,19 @@ default = value is same as original Obsidian settings, but I added it in incase 
 
 /* Base color values ---------------------------------------------------------------------------- */		
 
-	--color-base-00: /*bg color*/				#FFFAEE;
-	--color-base-05: 							#FCF6E9;
-	--color-base-10: 							#F8F2E4;
-	--color-base-20: /*2nd bg color*/			#F1E9DA;
-	--color-base-25: 							#EEE5D5;
-	--color-base-30: 							#EAE1D0;
-	--color-base-35: 							#E7DCCB;
-	--color-base-40: 							#E3D8C6;
+	--color-base-00: /*bg color*/				#F6F6F6;
+	--color-base-05: 							#F2F3F3;
+	--color-base-10: 							#EEF1F1;
+	--color-base-20: /*2nd bg color*/			#E5EBEC;
+	--color-base-25: 							#E1E9E9;
+	--color-base-30: 							#DDE6E6;
+	--color-base-35: 							#D8E3E4;
+	--color-base-40: 							#D4E0E1;
 
-	--color-base-50: 							#C8BDAD;
-	--color-base-60: 							#AEA393;
-	--color-base-70: 							#6B6053;
-	--color-base-100: /*text color*/ 			#43382D;
+	--color-base-50: 							#B7C2C3;
+	--color-base-60: 							#9AA4A5;
+	--color-base-70: 							#5F6769;
+	--color-base-100: /*text color*/ 			#252B2D;
 
 /* Extended color values ------------------------------------------------------------------------ */
 
@@ -519,13 +522,12 @@ body {
 	border-color: transparent !important;
 }
 
-
 /* Left, middle, and right panes */
 .workspace-split.mod-left-split, .workspace-split.mod-root, .workspace-split.mod-right-split {
 	height: calc(100% - 24px);
 }
 .workspace-tab-header-container {
-	background: var(--ncg-triple-background);
+	background: var(--ncg-color-accent-1);
 }
 .workspace-tab-header-container-inner:not(.mod-root .workspace-tab-header-container-inner) {
 	background-color: var(--ncg-color-background-1);
@@ -540,7 +542,7 @@ body {
 
 /* Left ribbon */
 .workspace-ribbon, .workspace-ribbon::before {
-	background: var(--ncg-triple-background) !important;
+	background: var(--ncg-color-accent-1) !important;
 	border: 0;
 }
 
@@ -614,7 +616,7 @@ body {
 	border: 0px;
 	border-radius: 0px;
 	width: calc(100% - 44px);
-	background: var(--ncg-triple-background);
+	background: var(--ncg-color-accent-1);
 }
 
 
