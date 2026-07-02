@@ -74,17 +74,17 @@ default = value is same as original Obsidian settings, but I added it in incase 
 	--ncg-color-unknown-value:					#FF00FF;
 	--ncg-color-unknown-value-hsl:				300, 100, 50;
 
-	--ncg-color-accent-1:                       #90BDC0;
-	--ncg-color-accent-1-rgb:                   144, 189, 192;
-	--ncg-color-accent-1-hsl:                   184, 29%, 66%;
-
-	--ncg-color-accent-2:                       #6D9090;
-	--ncg-color-accent-2-rgb:                   109, 144, 144;
-	--ncg-color-accent-2-hsl:                   180, 14%, 50%;
-
-	--ncg-color-accent-3:                       #4A625F;
-	--ncg-color-accent-3-rgb:                   74, 98, 95;
-	--ncg-color-accent-3-hsl:                   173, 14%, 34%;
+	--ncg-color-accent-1:                        #B26A49;
+	--ncg-color-accent-1-rgb:                    178, 106, 73;
+	--ncg-color-accent-1-hsl:                    19, 42%, 49%;
+	
+	--ncg-color-accent-2:                        #935243;
+	--ncg-color-accent-2-rgb:                    147, 82, 67;
+	--ncg-color-accent-2-hsl:                    11, 37%, 42%;
+	
+	--ncg-color-accent-3:                        #824040;
+	--ncg-color-accent-3-rgb:                    130, 64, 64;
+	--ncg-color-accent-3-hsl:                    0, 34%, 38%;
 
 	--ncg-color-accent-supp-1:  				#729969;
 	--ncg-color-accent-supp-2:  				#4A6547;
@@ -126,6 +126,7 @@ default = value is same as original Obsidian settings, but I added it in incase 
 
 	--ncg-color-background-1:					var(--color-base-00);
 	--ncg-color-background-2:					var(--color-base-20);
+	--ncg-color-background-3:					#576071;
 	--ncg-color-transparent-l:					rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-l));
 	--ncg-color-transparent-m:					rgba(var(--ncg-color-accent-1-rgb), var(--ncg-alpha-m));
 	--ncg-color-border:							var(--color-base-40);
@@ -138,19 +139,19 @@ default = value is same as original Obsidian settings, but I added it in incase 
 
 /* Base color values ---------------------------------------------------------------------------- */		
 
-	--color-base-00: /*bg color*/				#F6F6F6;
-	--color-base-05: 							#F2F3F3;
-	--color-base-10: 							#EEF1F1;
-	--color-base-20: /*2nd bg color*/			#E5EBEC;
-	--color-base-25: 							#E1E9E9;
-	--color-base-30: 							#DDE6E6;
-	--color-base-35: 							#D8E3E4;
-	--color-base-40: 							#D4E0E1;
+	--color-base-00: /*bg color*/				#FFF4ED;
+	--color-base-05: 							#FDF1EB;
+	--color-base-10: 							#FBEEE9;
+	--color-base-20: /*2nd bg color*/			#F7E8E4;
+	--color-base-25: 							#F5E4E2;
+	--color-base-30: 							#F3E1E0;
+	--color-base-35: 							#F1DEDD;
+	--color-base-40: 							#EFDBDB;
 
-	--color-base-50: 							#B7C2C3;
-	--color-base-60: 							#9AA4A5;
-	--color-base-70: 							#5F6769;
-	--color-base-100: /*text color*/ 			#252B2D;
+	--color-base-50: 							#D0C1C2;
+	--color-base-60: 							#B0A6A8;
+	--color-base-70: 							#918C8F;
+	--color-base-100: /*text color*/ 			#333C43;
 
 /* Extended color values ------------------------------------------------------------------------ */
 
@@ -249,7 +250,7 @@ body {
 	--tab-text-color-focused:					var(--ncg-color-text-muted);
 	--tab-text-color-focused-active:			var(--ncg-color-text-normal);
 
-	--tab-container-background: 				var(--ncg-color-accent-1);
+	--tab-container-background: 				var(--ncg-color-background-3);
 	--tab-divider-color: 						transparent;
 	--tab-outline-color: 						transparent;
 
@@ -526,9 +527,13 @@ body {
 .workspace-split.mod-left-split, .workspace-split.mod-root, .workspace-split.mod-right-split {
 	height: calc(100% - 24px);
 }
+
+/* Headers */
 .workspace-tab-header-container {
-	background: var(--ncg-color-accent-1);
+	background: var(--ncg-color-background-3);
 }
+
+/* Tab buttons */
 .workspace-tab-header-container-inner:not(.mod-root .workspace-tab-header-container-inner) {
 	background-color: var(--ncg-color-background-1);
 	border-radius: var(--ncg-view-radius) var(--ncg-view-radius) 0 0;
@@ -536,16 +541,19 @@ body {
 	margin-top: 6px !important;
 	margin-bottom: auto !important;
 }
+
+/* Side pane backgrounds */
 .workspace-leaf-content {
 	background-color: var(--ncg-color-background-1);
 }
 
 /* Left ribbon */
 .workspace-ribbon, .workspace-ribbon::before {
-	background: var(--ncg-color-accent-1) !important;
+	background: var(--ncg-color-background-3) !important;
 	border: 0;
 }
 
+/* Sidebar styling */
 .side-dock-actions {
 	background-color: var(--ncg-color-background-1);
 	padding: 6px 12px 6px 6px;
@@ -575,11 +583,11 @@ body {
 
 /* Middle pane */
 .mod-root.workspace-split{
-	background-color: var(--ncg-color-accent-1);
+	background-color: var(--ncg-color-background-3);
 	padding: 0;
 }
 
-/* Tabs */
+/* Not selected tabs */
 .workspace-tab-header.tappable {
 	background-color: var(--ncg-color-background-2);
 	margin: 0px 2px 4px 2px;
@@ -606,7 +614,7 @@ body {
 }
 
 .titlebar-button-container.mod-right {
-	background-color: var(--ncg-color-accent-1) !important;
+	background-color: var(--ncg-color-background-3) !important;
 	color: var(--ncg-color-text-muted);
 	font-weight: 600;
 }
@@ -616,7 +624,7 @@ body {
 	border: 0px;
 	border-radius: 0px;
 	width: calc(100% - 44px);
-	background: var(--ncg-color-accent-1);
+	background: var(--ncg-color-background-3);
 }
 
 
